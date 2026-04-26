@@ -41,6 +41,7 @@ export default function ContactForm() {
           className="peer w-full bg-transparent border-b-2 border-zinc-300 dark:border-zinc-700 py-3 outline-none focus:border-orange-500 transition-colors text-xl font-bold placeholder-transparent"
         />
         <label
+        suppressHydrationWarning
           className="absolute left-0 top-3 -z-10 origin-[0] transform text-sm font-black uppercase tracking-[0.2em] text-zinc-500 duration-300 
           peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 
           peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-90 peer-focus:text-orange-500
