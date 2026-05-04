@@ -112,9 +112,9 @@ export default function Navbar() {
             >
               <div className="relative z-10 transition-transform duration-500">
                 {theme === "light" ? (
-                  <IconSun size={20} stroke={2.5} />
-                ) : (
                   <IconMoon size={20} stroke={2.5} />
+                ) : (
+                  <IconSun size={20} stroke={2.5} />
                 )}
               </div>
             </button>

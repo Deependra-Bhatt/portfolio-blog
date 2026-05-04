@@ -1,5 +1,3 @@
-import React from "react";
-
 const ResumePage = () => {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 selection:bg-orange-500 selection:text-white">
@@ -26,7 +24,7 @@ const ResumePage = () => {
 
           {/* Download Button with Neo-Brutalist Shadow */}
           <a
-            href="/resume_db.pdf"
+            href="/Resume.pdf"
             download
             className="group relative inline-block px-8 py-4 font-bold text-black dark:text-white border-2 border-orange-100 dark:border-gray-500 bg-black dark:bg-white transition-all hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0"
           >
@@ -46,7 +44,7 @@ const ResumePage = () => {
           {/* PDF Wrapper with Glassmorphism & Brutalist Border */}
           <div className="relative z-10 w-full h-[80vh] border-4 border-black dark:border-white rounded-none bg-white dark:bg-zinc-900 shadow-[12px_12px_0px_0px_rgba(79,70,229,1)] dark:shadow-[12px_12px_0px_0px_rgba(249,115,22,1)] overflow-hidden">
             <iframe
-              src="/resume_db.pdf#toolbar=0"
+              src="/Resume.pdf#toolbar=0"
               className="w-full h-full grayscale-[50%] contrast-[110%] hover:grayscale-0 transition-all duration-500"
               title="Deependra Bhatt Resume"
             />

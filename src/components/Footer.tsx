@@ -6,7 +6,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t-4 border-black dark:border-white">
+    <footer className="mt-10 border-t-4 border-black dark:border-white">
       <div className="max-w-5xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Logo/Name Section */}

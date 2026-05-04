@@ -15,9 +15,16 @@ export default function ContactPage() {
           Let's <br />
           <span className="text-orange-500">Connect</span>
         </h1>
-        <p className="text-xl md:text-2xl mt-6 text-zinc-500 font-medium max-w-lg leading-relaxed">
-          Got a project? A question? Or just want to talk tech? Drop a line
-          below.
+        <p className="text-xl md:text-2xl mt-6 text-zinc-600 dark:text-zinc-400 font-bold max-w-xl leading-snug">
+          Whether you're looking to{" "}
+          <span className="text-black dark:text-white underline decoration-orange-500 decoration-4">
+            engineer a complex system
+          </span>{" "}
+          or want to discuss the{" "}
+          <span className="text-black dark:text-white underline decoration-indigo-500 decoration-4">
+            art of storytelling
+          </span>{" "}
+          — I'm just a message away.
         </p>
       </div>
 
