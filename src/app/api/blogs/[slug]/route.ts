@@ -3,18 +3,18 @@ import { NextResponse } from "next/server";
 import { getBlogsCollection } from "@/lib/blog";
 
 interface Params {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function GET(req: Request, { params }: Params) {
   try {
     const blogsCollection = await getBlogsCollection();
-    const awaitedParams = await params;
+    const { slug } = await params;
 
     const blog = await blogsCollection.findOne({
-      slug: awaitedParams.slug,
+      slug: slug,
     });
 
     if (!blog) {
