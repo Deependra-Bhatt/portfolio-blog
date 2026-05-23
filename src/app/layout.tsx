@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className="antialiased bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50">
+      <body suppressHydrationWarning className="antialiased bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50">
         <Navbar />
         <main className="max-w-4xl mx-auto px-6 pt-24 pb-20">{children}</main>
         <Footer />
