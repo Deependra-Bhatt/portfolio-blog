@@ -13,7 +13,9 @@ export default function ContactPage() {
       <div className="mb-20">
         <h1 className="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] italic">
           Let's <br />
-          <span className="text-orange-500">Connect</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-indigo-600 animate-gradient-x">
+            Connect
+          </span>
         </h1>
         <p className="text-xl md:text-2xl mt-6 text-zinc-600 dark:text-zinc-400 font-bold max-w-xl leading-snug">
           Whether you're looking to{" "}

@@ -7,7 +7,9 @@ export default function ProjectsPage() {
       <div className="border-b-4 border-black dark:border-white pb-10 mb-16">
         <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none">
           Selected <br />
-          <span className="text-orange-500">Works</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-indigo-600 animate-gradient-x">
+            Works
+          </span>
         </h1>
       </div>
 
@@ -20,7 +22,7 @@ export default function ProjectsPage() {
           >
             {/* The Offset Shadow Background */}
             <div className="absolute inset-0 bg-indigo-600 translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" />
-            
+
             <div className="relative bg-white dark:bg-zinc-950 border-4 border-black dark:border-white p-8 h-full flex flex-col justify-between">
               <div>
                 <div className="flex justify-between items-start mb-4">
@@ -43,7 +45,9 @@ export default function ProjectsPage() {
                   </span>
                 ))}
                 {project.tech.length > 3 && (
-                   <span className="text-[10px] font-black uppercase px-2 py-1">+ {project.tech.length - 3}</span>
+                  <span className="text-[10px] font-black uppercase px-2 py-1">
+                    + {project.tech.length - 3}
+                  </span>
                 )}
               </div>
             </div>

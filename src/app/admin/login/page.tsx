@@ -26,7 +26,7 @@ export default function AdminLoginPage() {
         setError("INVALID ACCESS KEY.");
         return;
       }
-      router.push("/admin/create-blog");
+      router.push("/admin/content");
       router.refresh();
     } catch (error) {
       setError("COMMUNICATION ERROR.");

@@ -9,7 +9,7 @@ export default function Home() {
       <section className="border-b-4 border-black dark:border-white pb-12">
         <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-8">
           Deependra <br />
-          <span className="text-orange-500 italic">Bhatt</span>
+          <span className="text-transparent italic bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-indigo-600 animate-gradient-x">Bhatt</span>
         </h1>
 
         <div className="grid md:grid-cols-2 gap-8 items-end">

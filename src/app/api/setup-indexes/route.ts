@@ -1,3 +1,4 @@
+// app/api/setup-indexes/route.ts
 import { NextResponse } from "next/server";
 import { getBlogsCollection } from "@/lib/blog";
 
@@ -5,26 +6,22 @@ export async function GET() {
   try {
     const blogsCollection = await getBlogsCollection();
 
-    // unique slug index
     await blogsCollection.createIndex({ slug: 1 }, { unique: true });
 
-    // createdAt index for sorting
+    // COMPOUND INDEX: Optimized for Dashboard management and fast lifecycle sorting
     await blogsCollection.createIndex({
+      deletedAt: 1,
+      status: 1,
       createdAt: -1,
     });
 
     return NextResponse.json({
       success: true,
-      message: "Indexes created successfully",
+      message: "Compound lifecycle indexes added.",
     });
   } catch (error) {
-    console.error(error);
-
     return NextResponse.json(
-      {
-        success: false,
-        message: "Failed to create indexes",
-      },
+      { success: false, message: "Index routine failed." },
       { status: 500 },
     );
   }

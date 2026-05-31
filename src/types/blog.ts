@@ -1,4 +1,7 @@
+// types/blog.ts
 import { ObjectId } from "mongodb";
+
+export type BlogStatus = "draft" | "published" | "archived";
 
 export interface Blog {
   _id?: ObjectId;
@@ -16,4 +19,9 @@ export interface Blog {
   createdAt: Date;
 
   updatedAt: Date;
+
+  // Dashboard Lifecycle Additions
+  status?: BlogStatus;
+
+  deletedAt?: Date | null;
 }
