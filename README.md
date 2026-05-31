@@ -1,8 +1,3 @@
-Here is a complete, production-ready `README.md` file designed specifically for your **"Code & Cadence"** platform. It reflects your exact tech stack, architectural decisions, and bold, intellectual tone.
-
----
-
-````markdown
 # 🚀 Code & Cadence — Personal Creator Engine
 
 > **"Logic is the skeleton, literature is the heartbeat."**
@@ -65,7 +60,6 @@ src/
 └── types/
     └── blog.ts                   # Strict type safety layout models
 ```
-````
 
 ---
 
