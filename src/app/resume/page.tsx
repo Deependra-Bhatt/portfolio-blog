@@ -40,7 +40,6 @@ const ResumePage = () => {
           <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-orange-500 mb-6 flex items-center gap-2">
             <span className="animate-pulse">●</span> Live Preview
           </h2>
-
           {/* PDF Wrapper with Glassmorphism & Brutalist Border */}
           <div className="relative z-10 w-full h-[80vh] border-4 border-black dark:border-white rounded-none bg-white dark:bg-zinc-900 shadow-[12px_12px_0px_0px_rgba(79,70,229,1)] dark:shadow-[12px_12px_0px_0px_rgba(249,115,22,1)] overflow-hidden">
             <iframe
@@ -49,9 +48,6 @@ const ResumePage = () => {
               title="Deependra Bhatt Resume"
             />
           </div>
-
-          {/* Decorative background element */}
-          <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-zinc-200 dark:bg-zinc-800 -z-10 border-2 border-dashed border-zinc-400" />
         </div>
 
         {/* FOOTER CALLOUT */}
