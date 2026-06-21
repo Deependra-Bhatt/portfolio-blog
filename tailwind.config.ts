@@ -1,5 +1,5 @@
 export default {
-  darkMode: "class", // ✅ important
+  darkMode: "class",
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
