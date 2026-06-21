@@ -94,17 +94,31 @@ export default async function BlogPage({ params }: BlogPageProps) {
         </header>
 
         {/* Content Section - Brutalist Prose */}
+        {/* Content Section - Brutalist Prose */}
         <section
           className="
             prose prose-lg dark:prose-invert max-w-none
+            
+            /* Headings Styling Configuration */
             prose-headings:text-black dark:prose-headings:text-white
             prose-headings:font-black prose-headings:uppercase prose-headings:tracking-tighter
             prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl
+            
+            /* Layout Elements */
             prose-p:text-zinc-800 dark:prose-p:text-zinc-300 prose-p:leading-relaxed
             prose-strong:text-black dark:prose-strong:text-white prose-strong:font-black
-            prose-a:text-orange-500 prose-a:no-underline prose-a:border-b-4 prose-a:border-orange-500
+            
+            /* Lists Configurations */
+            prose-ul:list-disc prose-ol:list-decimal
+            prose-li:text-zinc-800 dark:prose-li:text-zinc-300 prose-li:font-bold
+            
+            /* Links & Blockquotes */
+            prose-a:text-orange-500 pro se-a:no-underline prose-a:border-b-4 prose-a:border-orange-500
             prose-blockquote:border-l-8 prose-blockquote:border-pink-500 prose-blockquote:bg-zinc-100 dark:prose-blockquote:bg-zinc-900 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:font-bold prose-blockquote:italic
             prose-img:border-4 prose-img:border-black prose-img:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
+            
+            /* Clean overrides for raw code rendering blocks inside code wrappers */
+            prose-:before:content-none prose-code:after:content-none
           "
         >
           <MarkdownRenderer content={blog.content} />
